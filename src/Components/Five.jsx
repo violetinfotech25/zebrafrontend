@@ -2,9 +2,9 @@ import React from 'react';
 import '../assets/css/Five.css'; // Create this file and paste your CSS there
 import work1 from '../assets/images/images/work1.jpg';
 import work2 from '../assets/images/images/work2.jpg';
-import afterImg from '../assets/images/img 6.jpg';
+import afterImg from '../assets/images/img6.jpg';
 import work4 from '../assets/images/images/work4.jpg';
-import work5 from '../assets/images/img 10.JPG';
+import work5 from '../assets/images/img10.JPG';
 
 function Five() {
   return (
