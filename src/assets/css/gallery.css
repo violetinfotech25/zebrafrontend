@@ -1,0 +1,217 @@
+.gallery-container {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.aboutsec-clients h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+  padding: 0 20px;
+}
+
+.grid-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.grid-item:hover {
+  transform: scale(1.03);
+}
+
+.grid-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.month-label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Fullscreen Modal */
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+/* Marquee styles */
+.marquee-wrapper {
+  margin: 3rem auto;
+  text-align: center;
+  padding: 30px 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.marquee-wrapper h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.marquee {
+  display: flex;
+  gap: 30px;
+  animation: scrollX 20s linear infinite;
+}
+
+.left-to-right {
+  align-items: center;
+  animation-direction: normal;
+}
+
+.right-to-left {
+  animation-direction: reverse;
+}
+
+.marquee-logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Keyframes */
+@keyframes scrollX {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Buttons */
+.year-btn, .month-btn, .back-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.year-btn:hover, .month-btn:hover, .back-btn:hover {
+  background-color: #555;
+}
+
+.year-selector, .month-selector {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .gallery-title {
+    font-size: 1.5rem;
+  }
+
+  .year-btn, .month-btn, .back-btn {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  .grid-img {
+    height: 180px;
+  }
+
+  .month-label {
+    font-size: 0.9rem;
+  }
+}
+
+.marquee-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.marquee-logo {
+  height: 60px; /* or whatever size fits */
+  margin: 0 10px;
+}
+
+/* Optional for direction animations */
+.left-to-right {
+  animation: scrollLTR 30s linear infinite;
+}
+
+.right-to-left {
+  animation: scrollRTL 30s linear infinite;
+}
+
+@keyframes scrollLTR {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes scrollRTL {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
