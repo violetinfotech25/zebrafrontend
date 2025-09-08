@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../assets/css/Nav.css";
 import Footernew from "../Components/Footer";
-import "../assets/css/Gallery.css";
+import "../assets/css/gallery.css";
 import jan2023 from "../assets/images/gallery/5star-1.jpg";
 import feb2023 from "../assets/images/gallery/5star-2.jpg";
 import march2023 from "../assets/images/gallery/IMG_2570.jpg";
