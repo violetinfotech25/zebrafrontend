@@ -9,17 +9,15 @@ const Redbg = () => {
           <p className="section-subtitle001">ACP Cladding Solutions</p>
 
           <h2 className="section-title001">
-            Enhance Your Building's Appeal With Modern ACP Cladding
+            Premium ACP, GRT & Glass Cladding Solutions
           </h2>
 
           <p className="section-text001">
-            Transform the look of your structure with durable, lightweight, and weather-resistant Aluminium Composite Panels.
-            Ideal for commercial, residential, and industrial facades, our ACP cladding services combine style with
-            performance. Choose from a range of textures, colors, and finishes to match your brand identity or architectural vision.
+            At Zebra Sign World, we specialize in delivering <strong>high-quality ACP, GRT, and glass cladding solutions</strong> that combine durability, elegance, and modern design. With <strong>over 10 years of experience,</strong> our team creates custom facades that enhance aesthetics, protect structures, and transform buildings into iconic landmarks across Coimbatore and South India.
           </p>
         </div>
 
-        <button className="btn-secondary001">Get a Free Quote</button>
+        {/* <button className="btn-secondary001">Get a Free Quote</button> */}
       </div>
     </section>
   );

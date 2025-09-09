@@ -10,11 +10,7 @@ const SecondSec = () => {
         <div className="left-content">
           <h1 className="title">What we</h1>
           <p className="desc">
-            Zebra Sign World is passionate about creating striking visual solutions to elevate your
-            brand with our precise ACP cladding work in Coimbatore and all over South India. By focusing on
-            high-quality ACP cladding services and innovative LED signage, we transform spaces and enhance brand
-            visibility. Our dedicated team work with combined creativity and expertise to deliver custom designs
-            tailored to your unique needs.
+            At Zebra Sign World, we are passionate about transforming buildings into iconic landmarks through our expert ACP, GRT, and glass cladding services. With over 10 years of experience in the industry, we specialize in delivering precise, high-quality cladding solutions that combine strength, durability, and aesthetic appeal. Our skilled team works closely with clients to create custom designs tailored to their unique vision, enhancing both functionality and visual impact. From modern commercial facades to elegant residential exteriors, our work reflects creativity, craftsmanship, and attention to detail - making every project a statement of excellence across Coimbatore and all over South India.
           </p>
           <a href="./assets/images/zebra.pdf" className="download-btn" download>
             Download Brochure

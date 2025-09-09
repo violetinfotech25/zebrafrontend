@@ -12,7 +12,7 @@ const Four = () => {
         <h2 className="h2 section-title">Explore Highlights</h2>
 
         <p className="section-text">
-          Explore our commitment to excellence through advanced ACP cladding and premium LED signage. Designed for longevity and style, our solutions meet the unique needs of every residential, commercial, or industrial project.
+          Our <strong>ACP cladding </strong> offers sleek, durable, and modern panels that enhance your building’s look and longevity, while <strong>GRT cladding</strong> provides strong, versatile solutions that add both elegance and structural strength to any facade. Complementing these, our <strong>glass cladding</strong> brings sophistication, transparency, and natural light to spaces, creating visually striking and contemporary exteriors. Together, these solutions transform buildings into iconic landmarks with style, durability, and lasting impact.
         </p>
 
         <ul className="package-list">
@@ -24,7 +24,7 @@ const Four = () => {
               <div className="card-content">
                 <h3 className="h3 card-title">Why Choose Zebra sign world?</h3>
                 <p className="card-text">
-                  As a top provider of ACP cladding in Coimbatore, we specialize in high-quality ACP cladding and LED signage, prioritizing craftsmanship and customer satisfaction to bring your unique vision to life.
+                  With <strong>over 10 years of expertise</strong> in ACP, GRT, and glass cladding, Zebra Sign World delivers <strong>high-quality, custom-designed solutions</strong> that combine durability, style, and precision. Our dedicated team ensures every project enhances your building’s aesthetic appeal and leaves a lasting impression.
                 </p>
               </div>
               <div className="card-price">
@@ -59,7 +59,7 @@ const Four = () => {
               <div className="card-content">
                 <h3 className="h3 card-title">Values</h3>
                 <p className="card-text">
-                  We prioritize integrity and sustainability and build trust while reducing our environmental impact. Our dedication helps us to continuously improve and deliver exceptional results for our clients in Coimbatore and all over South India.
+                  At Zebra Sign World, we prioritize <strong>quality, innovation, and customer satisfaction,</strong> delivering durable and visually stunning ACP, GRT, and glass cladding solutions. With <strong>over 10 years of expertise,</strong> we uphold integrity, precision, and sustainable practices in every project.
                 </p>
               </div>
               <div className="card-price">

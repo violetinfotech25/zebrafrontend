@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Carousel, Navbar, Nav, Container, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/Nav.css';
-import Logo from '../assets/images/zebra-elevation1.png';
+import Logo from '../assets/images/zebra-elevation2.png';
 import { Link } from 'react-router-dom';
 import Carouselfir from '../assets/images/HPL.jpg';
 
@@ -56,10 +56,10 @@ function App() {
 
       {/* Social Icons */}
       <div className="d-flex align-items-center social-icons text-dark ms-lg-4">
-        <a href="#" className="me-2"><i className="fab fa-youtube"></i></a>
-        <a href="#" className="me-2"><i className="fab fa-facebook-f"></i></a>
-        <a href="#" className="me-2"><i className="fab fa-instagram"></i></a>
-        <a href="https://wa.me/918807199880" target='blank' className="me-3"><i className="fab fa-whatsapp"></i></a>
+        <a target='blank' href="https://www.youtube.com/@zebrasignworld" className="me-2"><i className="fab fa-youtube"></i></a>
+        <a target='blank' href="https://www.facebook.com/profile.php?id=61560964190153" className="me-2"><i className="fab fa-facebook-f"></i></a>
+        <a target='blank' href="https://www.instagram.com/zebra_sign_world/" className="me-2"><i className="fab fa-instagram"></i></a>
+        <a target='blank' href="https://wa.me/918807199880" className="me-3"><i className="fab fa-whatsapp"></i></a>
       </div>
 
       {/* Phone Number */}
@@ -87,8 +87,8 @@ function App() {
         alt="Slide 1"
       />
       <Carousel.Caption>
-        <h3>First Slide Title</h3>
-        <p>Short description for the first slide.</p>
+        <h3>Shine, Strength, Style.</h3>
+        <p>The Future Of Facades Is Here</p>
       </Carousel.Caption>
     </Carousel.Item>
 
@@ -99,8 +99,8 @@ function App() {
         alt="Slide 2"
       />
       <Carousel.Caption>
-        <h3>Second Slide Title</h3>
-        <p>Short description for the second slide.</p>
+        <h3>Glass, GRC, ACP</h3>
+        <p>More Than Covering, It’s Crafting Identity</p>
       </Carousel.Caption>
     </Carousel.Item>
 
@@ -111,8 +111,8 @@ function App() {
         alt="Slide 3"
       />
       <Carousel.Caption>
-        <h3>Third Slide Title</h3>
-        <p>Short description for the third slide.</p>
+        <h3>Panels of GRT, Sheets of ACP</h3>
+        <p>Designs that define modern <br />architecture perfectly</p>
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>

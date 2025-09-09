@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../assets/css/About.css';
+import '../assets/css/contact.css';
 import Footernew from '../Components/Footer';
 
 const Contactsec = () => {
-  const [text, setText] = useState('Contact Page');
+  const [text, setText] = useState('Get in Touch');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -41,11 +41,33 @@ const Contactsec = () => {
     <>
       <div className="contact-container">
         <div className="contact-left">
-          <img 
-            src="https://quanutrition.com/wp-content/uploads/2024/01/Contact-Us-3.png" 
-            alt="Contact" 
-            className="contact-image"
-          />
+          <div className='contact-content'>
+  <h1>Zebra Sign World</h1>
+  <p>Feel free to contact us, let’s work together and develop dreams</p>
+
+  <div className="contact-info">
+    <i className="fas fa-phone-alt fa-flip-horizontal contact-icon"></i>
+    <a href="tel:+919843099624">+91 98430 99624</a> |
+    <a href="tel:+918807199880">+91 88071 99880</a>
+
+    <br />
+
+    <i className="fas fa-envelope contact-icon"></i>
+    <a href="mailto:zebrasignworld@gmail.com">zebrasignworld@gmail.com</a>
+
+    <br />
+
+    <i className="fas fa-map-marker-alt contact-icon"></i>
+    <address>15A1, Subbiyan Layout, Ramanathapuram, Coimbatore – 641045</address>
+  </div>
+
+  <div className="social-links">
+    <a target='blank' href="https://www.facebook.com/profile.php?id=61560964190153"><i className="fab fa-facebook-f"></i></a>
+    <a target='blank' href="https://www.instagram.com/zebra_sign_world/"><i className="fab fa-instagram"></i></a>
+    <a target='blank' href="https://wa.me/918807199880"><i className="fab fa-whatsapp"></i></a>
+    <a target='blank' href="https://www.youtube.com/@zebrasignworld"><i className="fab fa-youtube"></i></a>
+  </div>
+</div>
         </div>
 
         <div className="contact-right">

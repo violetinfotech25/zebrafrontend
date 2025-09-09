@@ -33,9 +33,11 @@
 }
 
 .contact-title {
-  font-size: 1rem;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 0.5em;
+  color: #ffffff;
+  text-decoration: solid underline #f5084f 5px;
 }
 
 .contact-text,
@@ -70,6 +72,7 @@
   display: flex;
   gap: 20px; /* space between icons */
   justify-content: start; /* or center/right if needed */
+  color: #f5084f;
 }
 
 .footer-social-icons li {
@@ -78,13 +81,13 @@
 
 .footer-social-icons a {
   text-decoration: none;
-  font-size: 18px;
-  color: #c2c2c2; /* or white if footer is dark */
+  font-size: 25px;
+  color: #f5084f;/* or white if footer is dark */
   transition: color 0.3s;
 }
 
 .footer-social-icons a:hover {
-  color: #f5084f; /* highlight on hover */
+  color: #ffffff; /* highlight on hover */
 }
 
 .nav__ul li {
@@ -181,6 +184,7 @@
   display: flex;
   flex: 1 1 250px;
   margin-bottom: 0.5em;
+  color: #fff;
 }
 
 .legal .copyright a{

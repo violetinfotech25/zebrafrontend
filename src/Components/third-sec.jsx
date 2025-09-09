@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
 import '../assets/css/third-sec.css';
 
-import beforeImage1 from '../assets/images/beforeandafter/kar-b.jpg';
-import afterImage1 from '../assets/images/beforeandafter/kar-a.jpg';
-import beforeImage2 from '../assets/images/beforeandafter/sub-a.JPG';
-import afterImage2 from '../assets/images/beforeandafter/sub-b.JPG';
+import beforeImage1 from '../assets/images/before&after/pukrabefore.png';
+import afterImage1 from '../assets/images/before&after/pukraafter.jpg';
+import beforeImage2 from '../assets/images/before&after/ssandavarbefore.png';
+import afterImage2 from '../assets/images/before&after/ssandavarafter.jpg';
 import beforeImage3 from '../assets/images/images/before-2.webp';
 import afterImage3 from '../assets/images/images/after-2.webp';
 
@@ -100,7 +100,7 @@ const ThirdSec = () => {
           {imagePairs.map((pair, idx) => (
             <img
               key={idx}
-              src={pair.before}
+              src={pair.after}
               alt={`Thumbnail ${idx}`}
               className="thumbnail"
               onClick={() => handleImageSwap(pair.before, pair.after)}
