@@ -62,7 +62,7 @@ const Saven = () => {
               <div className="acp001-highlight-box">
                 <h3
                   className="acp001-counter"
-                  data-target="30"
+                  data-target="10"
                   ref={el => (countersRef.current[0] = el)}
                 >
                   0
