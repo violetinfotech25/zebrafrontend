@@ -1,6 +1,7 @@
 // App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Scrolltotop from './Components/Scrolltotop';
 import Nav from './Components/Nav';
 import About from './Components/About';
 import Project from './Components/Project';
@@ -34,6 +35,7 @@ const HomeContent = () => (
 export const App = () => {
   return (
     <Router>
+      <Scrolltotop duration={1500} />
       <Routes>
         <Route path="/" element={<HomeContent />} />
         <Route path="/About" element={<About />} />
