@@ -82,7 +82,6 @@ const Form = () => {
                 <option value="Residential">Residential Cladding</option>
                 <option value="Commercial">Commercial Cladding</option>
                 <option value="Industrial">Industrial Cladding</option>
-                <option value="LED Sinage">LED Sinage</option>
               </select>
             </div>
 
