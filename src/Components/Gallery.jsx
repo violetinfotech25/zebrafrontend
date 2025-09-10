@@ -14,12 +14,14 @@ import sep2023 from "../assets/images/gallery/reimg6.jpeg";
 import oct2023 from "../assets/images/gallery/nillalai.jpeg";
 import nov2023 from "../assets/images/gallery/dolphin.jpg";
 import dec2023 from "../assets/images/gallery/celebrity.jpg";
+import jan2025 from "../assets/images/2.jpg";
+import feb2025 from "../assets/images/gallery/genesis.jpg";
+import mar2025 from "../assets/images/gallery/pukra.jpg";
 
 // Image data grouped by year & month
 const imagesByYear = {
   2023: {
     January: [
-      ,
       jan2023,
       feb2023,
       march2023,
@@ -69,24 +71,21 @@ const imagesByYear = {
   },
   2025: {
     January: [
+      jan2025,
+      feb2025,
+      mar2025,
       "images/gallery/2023/CCLS5513.JPG",
-      "images/gallery/2023/WhatsApp Image 2020-10-20 at 10.30.03 PM.jpeg",
-      "images/gallery/2024/IMG_2107.JPG"
     ],
     February: [
       "images/gallery/2024/IMG_2916.JPG",
-      "images/gallery/2024/IMG_4400.JPG",
       "images/gallery/2024/IMG_4919.JPG"
     ],
     June: [
-      "images/gallery/2023/WhatsApp Image 2020-10-20 at 10.30.03 PM.jpeg",
-      "images/gallery/2024/IMG_2107.JPG",
       "images/gallery/2024/IMG_9050---3.jpg"
     ],
     July: [
       "https://www.zebrasignworld.com/images/images/20241210062220IMG_1281.JPG",
       "images/gallery/2023/CCLS5513.JPG",
-      "images/gallery/2024/IMG_4400.JPG",
     ]
   },
 };
