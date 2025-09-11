@@ -95,6 +95,11 @@ const ThirdSec = () => {
           </div>
         </div>
 
+        <div className="buttons">
+          <button className="btn-left" onClick={handleBefore}>After</button>
+          <button className="btn-right" onClick={handleAfter}>Before</button>
+        </div>
+
         {/* Thumbnails */}
         <div className="thumbnails">
           {imagePairs.map((pair, idx) => (
@@ -106,11 +111,6 @@ const ThirdSec = () => {
               onClick={() => handleImageSwap(pair.before, pair.after)}
             />
           ))}
-        </div>
-
-        <div className="buttons">
-          <button className="btn-left" onClick={handleBefore}>Before</button>
-          <button className="btn-right" onClick={handleAfter}>After</button>
         </div>
       </div>
     </section>
