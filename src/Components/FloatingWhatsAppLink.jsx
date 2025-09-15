@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import "../assets/css/floatingwhatsApp.css";
+import "../assets/css/floatingwhatsapp.css";
 
 const FloatingWhatsAppLink = () => {
   const phoneNumber = "9843099624"; // Replace with your number (no + or spaces)
