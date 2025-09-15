@@ -7,22 +7,22 @@ import TVSlogo from "../assets/images/clients/TVS.png";
 import TGlogo from "../assets/images/clients/TG.png";
 import volvologo from "../assets/images/clients/volvo.png";
 import CMClogo from "../assets/images/clients/CMC.png";
-import aldura from '../assets/images/brands/aldura.jpg';
 import alstone from '../assets/images/brands/alstone.png';
 import aludecor from '../assets/images/brands/aludecor.png';
 import alumaze from '../assets/images/brands/alumaze.png';
-import alutech from '../assets/images/brands/alutech.png';
-import aluwall from '../assets/images/brands/aluwall.webp';
 import citybond from '../assets/images/brands/citybond.avif';
 import eurobond from '../assets/images/brands/eurobond.png';
-// import flexibond from '../assets/images/brands/flexibond.png';
-// import mapl from '../assets/images/brands/mapl.webp';
-import virgo from '../assets/images/brands/virgo.png';
 import viva from '../assets/images/brands/viva.png';
 import saintgobain from '../assets/images/brands/saint-gobain.jpg';
 import jindal from '../assets/images/brands/jindal.jpg';
 import ais from '../assets/images/brands/ais.jpg';
 import dowsil from '../assets/images/brands/dowsil.jpg';
+// import flexibond from '../assets/images/brands/flexibond.png';
+// import mapl from '../assets/images/brands/mapl.webp';
+// import virgo from '../assets/images/brands/virgo.png';
+// import alutech from '../assets/images/brands/alutech.png';
+// import aluwall from '../assets/images/brands/aluwall.webp';
+// import aldura from '../assets/images/brands/aldura.jpg';
 
 const clientLogos = [
   gangalogo,
@@ -97,13 +97,13 @@ const Aboutsec = () => {
     <img src = {jindal} alt=" Jindal" />
     <img src = {ais} alt="AIS" />
     <img src = {dowsil} alt="Dowsil" />
-    <img src = {aldura} alt=" Aldura" />
-    <img src = {alutech} alt="Alutech" />
-    <img src = {aluwall} alt="Aluwall" />
     <img src = {citybond} alt="Citybond" />
+    {/* <img src = {aldura} alt=" Aldura" />
+    <img src = {alutech} alt="Alutech" />
+    <img src = {aluwall} alt="Aluwall" /> */}
     {/* <img src = {flexibond} alt="Flexibond" />
     <img src = {mapl} alt="Mapl" /> */}
-    <img src = {virgo} alt="Virgo" />
+    {/* <img src = {virgo} alt="Virgo" /> */}
     
   </div>
 </div>

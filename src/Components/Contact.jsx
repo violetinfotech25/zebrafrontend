@@ -34,7 +34,7 @@ function Contact() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src='https://av.sc.com/corp-en/nr/content/images/man-texting-on-phone-contact-us-hero-image-2-scaled.jpg'
+              src='https://voca-land.sgp1.cdn.digitaloceanspaces.com/-1/1635919600965/contact-us.jpeg'
               alt="Slide 1"
             />
           </Carousel.Item>

@@ -37,7 +37,7 @@ function Service() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src='https://www.electricexcellence.com/images/essi-network-background.jpg'
+              src='https://pharmaceuticalsmachines.com/wp-content/uploads/2022/05/Services20Page.jpg'
               alt="Slide 1"
             />
           </Carousel.Item>

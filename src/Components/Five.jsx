@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/Five.css'; // Create this file and paste your CSS there
-import afterImg from "../assets/images/gallery/thalassery.JPG";
+import work3 from "../assets/images/gallery/IMG_8797.JPG";
 import work2 from "../assets/images/gallery/pukra.jpg";
 import work1 from "../assets/images/gallery/ganga.jpg";
 import work4 from "../assets/images/gallery/ssandavar.jpg";
@@ -19,7 +19,7 @@ function Five() {
         </p>
 
         <ul className="gallery-list">
-          {[work1, work2, afterImg, work4, work5].map((image, index) => (
+          {[work1, work2, work3, work4, work5].map((image, index) => (
             <li className="gallery-item" key={index}>
               <figure className="gallery-image">
                 <img src={image} alt={`Gallery image ${index + 1}`} />

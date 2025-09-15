@@ -292,13 +292,13 @@
   width: 100px;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transition: filter 0.3s ease;
 }
 
-.clients-logos img:hover {
+/* .clients-logos img:hover {
   filter: grayscale(0%);
-}
+} */
 .aboutsec-how{
   text-align: center;
 }

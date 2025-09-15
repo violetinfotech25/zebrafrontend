@@ -1,7 +1,14 @@
 import React, { useState } from "react";
-import "../assets/css/Nav.css";
-import Footernew from "../Components/Footer";
 import "../assets/css/gallery.css";
+import Footernew from "../Components/Footer";
+import gangalogo from "../assets/images/clients/ganga.png";
+import LTlogo from "../assets/images/clients/LT.png";
+import FBlogo from "../assets/images/clients/FB.png";
+import TVSlogo from "../assets/images/clients/TVS.png";
+import TGlogo from "../assets/images/clients/TG.png";
+import volvologo from "../assets/images/clients/volvo.png";
+import CMClogo from "../assets/images/clients/CMC.png";
+
 import march2025 from "../assets/images/gallery/IMG_2570.JPG";
 import april2025 from "../assets/images/gallery/IMG_8797.JPG";
 import june2023 from "../assets/images/gallery/reimg3.jpeg";
@@ -14,47 +21,9 @@ import ssandavar from "../assets/images/gallery/ssandavar.jpg";
 import velancoffee from "../assets/images/gallery/velan_coffee.webp";
 import thalassery from "../assets/images/gallery/thalassery.JPG";
 import cheran from "../assets/images/gallery/cheran.JPG";
-import gangalogo from "../assets/images/clients/ganga.png";
-import LTlogo from "../assets/images/clients/LT.png";
-import FBlogo from "../assets/images/clients/FB.png";
-import TVSlogo from "../assets/images/clients/TVS.png";
-import TGlogo from "../assets/images/clients/TG.png";
-import volvologo from "../assets/images/clients/volvo.png";
-import CMClogo from "../assets/images/clients/CMC.png";
-// import jan2023 from "../assets/images/gallery/5star-1.JPG";
-// import feb2023 from "../assets/images/gallery/5star-2.JPG";
-// import sep2023 from "../assets/images/gallery/reimg6.jpeg";
-// import oct2023 from "../assets/images/gallery/nillalai.jpeg";
-// import nov2023 from "../assets/images/gallery/dolphin.jpg";
-// import dec2023 from "../assets/images/gallery/celebrity.jpg";
-// import july2023 from "../assets/images/gallery/prestige.JPG";
-// import may2023 from "../assets/images/gallery/karthika.jpeg";
 
 // Image data grouped by year & month
 const imagesByYear = {
-  // SignBoard: {
-  //   January: [
-  //     jan2023,
-  //     feb2023,
-  //     may2023,
-  //     july2023,
-  //     sep2023,
-  //     oct2023,
-  //     nov2023,
-  //     dec2023,
-  //   ],
-  //   February: [
-  //     "/images/gallery/2023/FGIM2971.JPG",
-  //     "https://www.zebrasignworld.com/static/images/reimg7.jpg",
-  //     "https://www.zebrasignworld.com/images/images/20241210062220IMG_1281.JPG"
-  //   ],
-  //   March: [
-  //     "https://www.zebrasignworld.com/static/images/reimg2.jpeg",
-  //     "images/gallery/2023/IMG_7350.JPG"
-  //   ],
-  //   April: [
-  //   ],
-  // },
   ACP: {
     January: [
       mar2025,
@@ -70,10 +39,11 @@ const imagesByYear = {
       velancoffee,
       "/images/gallery/2023/IMG_7085-----1.jpg",
       thalassery,
-    ]
+    ],
   },
 };
 
+// Clients logos array
 const logosRow1 = [
   { src: gangalogo },
   { src: LTlogo },
@@ -81,7 +51,7 @@ const logosRow1 = [
   { src: TVSlogo },
   { src: TGlogo },
   { src: volvologo },
-  { src: CMClogo }
+  { src: CMClogo },
 ];
 
 const logosRow2 = [...logosRow1];
@@ -89,15 +59,50 @@ const logosRow2 = [...logosRow1];
 export default function Gallery() {
   const [selectedYear, setSelectedYear] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
+  // When a year is clicked, reset selected image and index
   const handleYearClick = (year) => {
     setSelectedYear(year);
     setSelectedImage(null);
+    setSelectedIndex(null);
   };
 
+  // Flatten images array for the selected year for easier navigation
+  const imagesForYear = selectedYear
+    ? Object.entries(imagesByYear[selectedYear]).flatMap(([month, images]) => images)
+    : [];
+
+  // Get preview image for the year (first image of first month)
   const getPreviewImage = (year) => {
     const months = Object.keys(imagesByYear[year]);
     return imagesByYear[year][months[0]][0];
+  };
+
+  // Open fullscreen image and set index
+  const openImage = (src, index) => {
+    setSelectedImage(src);
+    setSelectedIndex(index);
+  };
+
+  // Show previous image in fullscreen carousel
+  const showPrevious = (e) => {
+    e.stopPropagation();
+    setSelectedIndex((prev) => {
+      const newIndex = prev === 0 ? imagesForYear.length - 1 : prev - 1;
+      setSelectedImage(imagesForYear[newIndex]);
+      return newIndex;
+    });
+  };
+
+  // Show next image in fullscreen carousel
+  const showNext = (e) => {
+    e.stopPropagation();
+    setSelectedIndex((prev) => {
+      const newIndex = prev === imagesForYear.length - 1 ? 0 : prev + 1;
+      setSelectedImage(imagesForYear[newIndex]);
+      return newIndex;
+    });
   };
 
   return (
@@ -120,26 +125,36 @@ export default function Gallery() {
         )}
 
         {/* Step 2: Show all images from selected year */}
-        {selectedYear && (
+        {selectedYear && !selectedImage && (
           <>
             <h3>{selectedYear} Collections</h3>
             <div className="grid-gallery">
-              {Object.entries(imagesByYear[selectedYear]).flatMap(([month, images]) =>
-                images.map((src, index) => (
-                  <div key={`${month}-${index}`} className="grid-item" onClick={() => setSelectedImage(src)}>
-                    <img src={src} alt={`${month} ${index}`} className="grid-img" />
-                  </div>
-                ))
-              )}
+              {imagesForYear.map((src, index) => (
+                <div
+                  key={index}
+                  className="grid-item"
+                  onClick={() => openImage(src, index)}
+                >
+                  <img src={src} alt={`Image ${index}`} className="grid-img" />
+                </div>
+              ))}
             </div>
-            <button onClick={() => setSelectedYear(null)} className="back-btn">← Back</button>
+            <button onClick={() => setSelectedYear(null)} className="back-btn">
+              ← Back
+            </button>
           </>
         )}
 
-        {/* Fullscreen Image View */}
+        {/* Fullscreen Image View with navigation arrows */}
         {selectedImage && (
           <div className="fullscreen-overlay" onClick={() => setSelectedImage(null)}>
+            <button className="nav-arrow left" onClick={showPrevious}>
+              ‹
+            </button>
             <img src={selectedImage} alt="Full view" className="fullscreen-img" />
+            <button className="nav-arrow right" onClick={showNext}>
+              ›
+            </button>
           </div>
         )}
       </div>
