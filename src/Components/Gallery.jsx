@@ -132,7 +132,7 @@ export default function Gallery() {
                 ))
               )}
             </div>
-            <button onClick={() => setSelectedYear(null)} className="back-btn">← Back to Years</button>
+            <button onClick={() => setSelectedYear(null)} className="back-btn">← Back</button>
           </>
         )}
 
