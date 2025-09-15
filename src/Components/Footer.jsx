@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/css/Footer.css';
 import { IonIcon } from 'react-ion-icon';
-import Zebralogo from '../assets/images/zebra-elevation1.png';
+import Zebralogo from '../assets/images/zebra-elevation3.png';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -24,8 +24,7 @@ const Footer = () => {
             <img src={Zebralogo} alt="Zebra Sign World Logo" style={{ width: "120px" }} />
           </a>
           <p>
-            We specialize in high-quality ACP cladding services that elevate the look and durability of your buildings.
-            Trust us for sleek modern facades and weather-resistant installations.
+            Violet Infotech is a dynamic digital solutions company dedicated to empowering businesses with innovation and creativity. We specialize in web development, digital marketing, branding, and customized IT services that drive real growth. Our team blends technology, design, and strategy to deliver impactful solutions tailored to client needs. With a focus on excellence, we aim to be a trusted partner in shaping your digital success.
           </p>
         </li>
 

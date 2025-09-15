@@ -2,102 +2,86 @@ import React, { useState } from "react";
 import "../assets/css/Nav.css";
 import Footernew from "../Components/Footer";
 import "../assets/css/gallery.css";
-import jan2023 from "../assets/images/gallery/5star-1.JPG";
-import feb2023 from "../assets/images/gallery/5star-2.JPG";
-import march2023 from "../assets/images/gallery/IMG_2570.JPG";
-import april2023 from "../assets/images/gallery/IMG_8797.JPG";
-import may2023 from "../assets/images/gallery/karthika.jpeg";
+import march2025 from "../assets/images/gallery/IMG_2570.JPG";
+import april2025 from "../assets/images/gallery/IMG_8797.JPG";
 import june2023 from "../assets/images/gallery/reimg3.jpeg";
-import july2023 from "../assets/images/gallery/prestige.JPG";
 import aug2023 from "../assets/images/gallery/reimg5.jpeg";
-import sep2023 from "../assets/images/gallery/reimg6.jpeg";
-import oct2023 from "../assets/images/gallery/nillalai.jpeg";
-import nov2023 from "../assets/images/gallery/dolphin.jpg";
-import dec2023 from "../assets/images/gallery/celebrity.jpg";
 import jan2025 from "../assets/images/2.jpg";
 import feb2025 from "../assets/images/gallery/genesis.jpg";
 import mar2025 from "../assets/images/gallery/pukra.jpg";
+import apl2025 from "../assets/images/gallery/ganga.jpg";
+import ssandavar from "../assets/images/gallery/ssandavar.jpg";
+import velancoffee from "../assets/images/gallery/velan_coffee.webp";
+import thalassery from "../assets/images/gallery/thalassery.jpg";
+import cheran from "../assets/images/gallery/cheran.jpg";
+import gangalogo from "../assets/images/clients/ganga.png";
+import LTlogo from "../assets/images/clients/LT.png";
+import FBlogo from "../assets/images/clients/FB.png";
+import TVSlogo from "../assets/images/clients/TVS.png";
+import TGlogo from "../assets/images/clients/TG.png";
+import volvologo from "../assets/images/clients/volvo.png";
+import CMClogo from "../assets/images/clients/CMC.png";
+// import jan2023 from "../assets/images/gallery/5star-1.JPG";
+// import feb2023 from "../assets/images/gallery/5star-2.JPG";
+// import sep2023 from "../assets/images/gallery/reimg6.jpeg";
+// import oct2023 from "../assets/images/gallery/nillalai.jpeg";
+// import nov2023 from "../assets/images/gallery/dolphin.jpg";
+// import dec2023 from "../assets/images/gallery/celebrity.jpg";
+// import july2023 from "../assets/images/gallery/prestige.JPG";
+// import may2023 from "../assets/images/gallery/karthika.jpeg";
 
 // Image data grouped by year & month
 const imagesByYear = {
-  2023: {
+  // SignBoard: {
+  //   January: [
+  //     jan2023,
+  //     feb2023,
+  //     may2023,
+  //     july2023,
+  //     sep2023,
+  //     oct2023,
+  //     nov2023,
+  //     dec2023,
+  //   ],
+  //   February: [
+  //     "/images/gallery/2023/FGIM2971.JPG",
+  //     "https://www.zebrasignworld.com/static/images/reimg7.jpg",
+  //     "https://www.zebrasignworld.com/images/images/20241210062220IMG_1281.JPG"
+  //   ],
+  //   March: [
+  //     "https://www.zebrasignworld.com/static/images/reimg2.jpeg",
+  //     "images/gallery/2023/IMG_7350.JPG"
+  //   ],
+  //   April: [
+  //   ],
+  // },
+  ACP: {
     January: [
-      jan2023,
-      feb2023,
-      march2023,
-      april2023,
-      may2023,
-      june2023,
-      july2023,
-      aug2023,
-      sep2023,
-      oct2023,
-      nov2023,
-      dec2023,
-    ],
-    February: [
-    ],
-    March: [
-    ],
-    April: [
-    ],
-  },
-  2024: {
-    March: [
-      "/images/gallery/2023/FGIM2971.JPG",
-      "https://www.zebrasignworld.com/static/images/reimg7.jpg",
-      "https://www.zebrasignworld.com/images/images/20241210062220IMG_1281.JPG"
-    ],
-    April: [
-      "/images/gallery/2023/IMG_7085-----1.jpg",
-      "https://www.zebrasignworld.com/static/images/reimg2.jpeg",
-      "images/gallery/2023/IMG_7350.JPG"
-    ],
-    May: [
-      "https://www.zebrasignworld.com/static/images/reimg7.jpg",
-      "/images/gallery/2023/FGIM2971.JPG",
-      "https://www.zebrasignworld.com/static/images/reimg2.jpeg"
-    ],
-    June: [
-      "https://www.zebrasignworld.com/static/images/reimg2.jpeg",
-      "/images/gallery/2023/IMG_7085-----1.jpg",
-      "https://www.zebrasignworld.com/static/images/reimg7.jpg",
-    ],
-    July: [
-      "https://www.zebrasignworld.com/images/images/20241210062220IMG_1281.JPG",
-      "/images/gallery/2023/FGIM2971.JPG",
-      "images/gallery/2023/IMG_7350.JPG"
-    ]
-  },
-  2025: {
-    January: [
+      mar2025,
+      cheran,
       jan2025,
       feb2025,
-      mar2025,
-      "images/gallery/2023/CCLS5513.JPG",
-    ],
-    February: [
-      "images/gallery/2024/IMG_2916.JPG",
-      "images/gallery/2024/IMG_4919.JPG"
-    ],
-    June: [
-      "images/gallery/2024/IMG_9050---3.jpg"
-    ],
-    July: [
-      "https://www.zebrasignworld.com/images/images/20241210062220IMG_1281.JPG",
-      "images/gallery/2023/CCLS5513.JPG",
+      apl2025,
+      march2025,
+      april2025,
+      june2023,
+      aug2023,
+      ssandavar,
+      velancoffee,
+      "/images/gallery/2023/IMG_7085-----1.jpg",
+      thalassery,
     ]
   },
 };
 
 const logosRow1 = [
-  { src: "https://www.zebrasignworld.com/images/images/20241211054347ganga1_1.png" },
-  { src: "https://www.zebrasignworld.com/images/images/20241211054513FB1.png" },
-  { src: "https://www.zebrasignworld.com/images/images/20241211051755CMC.png" },
-  { src: "https://www.zebrasignworld.com/images/images/20241211052225L__T.png" },
-  { src: "https://www.zebrasignworld.com/images/images/20241211054741T__G1.png" },
-  { src: "https://www.zebrasignworld.com/images/images/20241211054750TVS1.png" },
-  { src: "https://www.zebrasignworld.com/images/images/20241211052319volvo.png" }
+  { src: gangalogo },
+  { src: LTlogo },
+  { src: FBlogo },
+  { src: TVSlogo },
+  { src: TGlogo },
+  { src: volvologo },
+  { src: CMClogo }
 ];
 
 const logosRow2 = [...logosRow1];
@@ -119,7 +103,7 @@ export default function Gallery() {
   return (
     <>
       <div className="gallery-container">
-        <h2 className="gallery-title">Image Gallery by Year</h2>
+        <h2 className="gallery-title">OUR WORKS</h2>
 
         {/* Step 1: Show years as image tiles */}
         {!selectedYear && (

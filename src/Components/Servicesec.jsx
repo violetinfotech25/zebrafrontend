@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/About.css';
 import Footernew from '../Components/Footer';
+import glassclading from "../assets/images/glass_clading.jpg";
 
 const Servicesec = () => {
   return (
@@ -56,7 +57,7 @@ const Servicesec = () => {
       {/* Left Side Image */}
       <div className="service-image">
         <img
-          src="https://www.zebrasignworld.com/static/images/background/build2.jpg"
+          src={glassclading}
           alt="Service"
         />
       </div>

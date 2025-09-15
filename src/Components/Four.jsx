@@ -41,7 +41,7 @@ const Four = () => {
               <div className="card-content">
                 <h3 className="h3 card-title">Vision and Mission</h3>
                 <p className="card-text">
-                  To provide a remarkable design that perfectly reflects your vision in reality. We focus on delivering exceptional ACP Cladding work with remarkable ACP sheet that elevate your brand with quality and providing the best support.
+                  We envision transforming South India’s architecture with cutting-edge ACP, GRT, and glass cladding that inspire modern design. With a decade of trusted expertise, we deliver tailored solutions that <strong>merge precision, strength, and creativity</strong>. Our mission is to craft iconic landmarks that leave a lasting impression in both style and durability.
                 </p>
               </div>
               <div className="card-price">
