@@ -16,6 +16,7 @@ import Formnew from './Components/Form';
 import Footernew from './Components/Footer';
 import Service from './Components/Service';
 import Contact from './Components/Contact';
+import FloatingWhatsapp from './Components/FloatingWhatsAppLink';
 
 const HomeContent = () => (
   <>
@@ -35,6 +36,7 @@ const HomeContent = () => (
 export const App = () => {
   return (
     <Router>
+      
       <Scrolltotop duration={1500} />
       <Routes>
         <Route path="/" element={<HomeContent />} />
@@ -43,6 +45,7 @@ export const App = () => {
         <Route path="/Service" element={<Service />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <FloatingWhatsapp />
     </Router>
   );
 };
