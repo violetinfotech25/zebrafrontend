@@ -12,7 +12,7 @@ import mar2025 from "../assets/images/gallery/pukra.jpg";
 import apl2025 from "../assets/images/gallery/ganga.jpg";
 import ssandavar from "../assets/images/gallery/ssandavar.jpg";
 import velancoffee from "../assets/images/gallery/velan_coffee.webp";
-import thalassery from "../assets/images/gallery/thalassery.jpg";
+import thalassery from "../assets/images/gallery/thalassery.JPG";
 import cheran from "../assets/images/gallery/cheran.jpg";
 import gangalogo from "../assets/images/clients/ganga.png";
 import LTlogo from "../assets/images/clients/LT.png";
