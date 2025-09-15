@@ -4,7 +4,7 @@ import { Carousel, Navbar, Nav as BootstrapNav, Container, Button } from 'react-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/Nav.css';
 import '../assets/css/About.css';
-import Logo from '../assets/images/zebra-elevation1.png';
+import Logo from '../assets/images/logo/zebra-elevation1.png';
 import { Link } from 'react-router-dom';
 import Servicesec1 from '../Components/Servicesec'
 

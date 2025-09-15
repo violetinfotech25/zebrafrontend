@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import '../assets/css/Saven.css';
-import World from '../assets/images/images/World3.png';
+import World from '../assets/images/World3.png';
 
 const Saven = () => {
   const countersRef = useRef([]);

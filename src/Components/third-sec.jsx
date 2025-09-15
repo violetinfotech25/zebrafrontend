@@ -1,12 +1,12 @@
 import React, { useRef, useEffect, useState } from 'react';
 import '../assets/css/third-sec.css';
 
-import beforeImage1 from '../assets/images/before&after/pukrabefore.png';
-import afterImage1 from '../assets/images/before&after/pukraafter.jpg';
-import beforeImage2 from '../assets/images/before&after/ssandavarbefore.png';
-import afterImage2 from '../assets/images/before&after/ssandavarafter.jpg';
-import beforeImage3 from '../assets/images/images/before-2.webp';
-import afterImage3 from '../assets/images/images/after-2.webp';
+import beforeImage1 from '../assets/images/beforeandafter/pukrabefore.png';
+import afterImage1 from '../assets/images/beforeandafter/pukraafter.jpg';
+import beforeImage2 from '../assets/images/beforeandafter/ssandavarbefore.png';
+import afterImage2 from '../assets/images/beforeandafter/ssandavarafter.jpg';
+import beforeImage3 from '../assets/images/beforeandafter/before-2.webp';
+import afterImage3 from '../assets/images/beforeandafter/after-2.webp';
 
 const imagePairs = [
   { before: beforeImage1, after: afterImage1 },

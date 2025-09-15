@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import Logo from '../assets/images/zebra-elevation2.png';
+import Logo from '../assets/images/logo/zebra-elevation2.png';
 
 export default function PageTransition({ duration = 1500 }) {
   const { pathname } = useLocation();

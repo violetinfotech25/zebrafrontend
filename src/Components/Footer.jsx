@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/css/Footer.css';
 import { IonIcon } from 'react-ion-icon';
-import Zebralogo from '../assets/images/zebra-elevation3.png';
+import Zebralogo from '../assets/images/logo/zebra-elevation3.png';
 
 const Footer = () => {
   const [email, setEmail] = useState('');

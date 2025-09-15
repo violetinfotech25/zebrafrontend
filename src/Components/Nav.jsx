@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Carousel, Navbar, Nav, Container, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/Nav.css';
-import Logo from '../assets/images/zebra-elevation2.png';
+import Logo from '../assets/images/logo/zebra-elevation2.png';
 import { NavLink, Link } from 'react-router-dom';
-import Carouselfir from '../assets/images/HPL.jpg';
+import Carouselfir from '../assets/images/carousel/HPL.jpg';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);

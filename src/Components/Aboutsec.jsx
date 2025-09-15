@@ -1,5 +1,12 @@
 import '../assets/css/About.css';
 import Footernew from './Footer';
+import gangalogo from "../assets/images/clients/ganga.png";
+import LTlogo from "../assets/images/clients/LT.png";
+import FBlogo from "../assets/images/clients/FB.png";
+import TVSlogo from "../assets/images/clients/TVS.png";
+import TGlogo from "../assets/images/clients/TG.png";
+import volvologo from "../assets/images/clients/volvo.png";
+import CMClogo from "../assets/images/clients/CMC.png";
 import aldura from '../assets/images/brands/aldura.jpg';
 import alstone from '../assets/images/brands/alstone.png';
 import aludecor from '../assets/images/brands/aludecor.png';
@@ -18,13 +25,13 @@ import ais from '../assets/images/brands/ais.jpg';
 import dowsil from '../assets/images/brands/dowsil.jpg';
 
 const clientLogos = [
-  "https://www.zebrasignworld.com/images/images/20241211054347ganga1_1.png",
-  "https://www.zebrasignworld.com/images/images/20241211054513FB1.png",
-  "https://www.zebrasignworld.com/images/images/20241211051755CMC.png",
-  "https://www.zebrasignworld.com/images/images/20241211052225L__T.png",
-  "https://www.zebrasignworld.com/images/images/20241211054741T__G1.png",
-  "https://www.zebrasignworld.com/images/images/20241211054750TVS1.png",
-  "https://www.zebrasignworld.com/images/images/20241211052319volvo.png",
+  gangalogo,
+  LTlogo,
+  FBlogo,
+  TVSlogo,
+  TGlogo,
+  volvologo,
+  CMClogo,
 ];
 
 const Aboutsec = () => {

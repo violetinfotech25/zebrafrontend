@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from '../Components/Nav2';
 import '../assets/css/Nav.css';
 import '../assets/css/About.css';
-import aboutImg from '../assets/images/about.jpg';
+import aboutImg from '../assets/images/carousel/about.jpg';
 import  Aboutsecc  from '../Components/Aboutsec'; 
 
 function About() {
